@@ -3,34 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/reset.css">
-    <link rel="stylesheet" href="./assets/css/global.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Spider Man | Multiverso</title>
+    <link rel="stylesheet" href="./assets/css/home-page-style.css">
 </head>
 <body>
-    <div class="o-nav">
-    <nav class="s-menu">
-        <ul class="s-menu__container-navbar">
-            <li class="s-menu__item">
-                <a href="/">Página Inicial</a>
-            </li>
-            <li class="s-menu__item">
-                <a href="#">Tobey Maguire</a>
-            </li>
-            <li class="menu__icon"> <img src="./assets/images/icons/spider.svg" alt="Spider Multiverso"> </li>
-            <li class="o-nav__item">
-                <a href="#">Tom Holland</a>
-            </li>
-            <li class="s-menu__item">
-                <a href="#">Andre Garfild</a>
-            </li>
-        </ul>       
+    <nav>
+        <div class="o-nav s-menu">
+            <ul class="s-menu__container-navbar">
+                <li class="s-menu__item">
+                    <a href="/">Página Inicial</a>
+                </li>
+                <li class="s-menu__item">
+                    <a href="#">Tobey Maguire</a>
+                </li>
+                <li class=" s-menu__item  menu__icon"> <img src="./assets/images/icons/spider.svg" alt="Spider Multiverso"> </li>
+                <li class="s-menu__item">
+                    <a href="#">Tom Holland</a>
+                </li>
+                <li class="s-menu__item">
+                    <a href="#">Andrew Garfield</a>
+                </li>
+            </ul>       
+        </div>
     </nav>
-    </div>
-    <div class="s-container">
-        <!-- Cards, controlador de Menu ...  -->
-    </div>
+    <main>
+        <div class="o-main">
+            <section class="s-conatainer__cards">
+                <article class="s-container__card">
+                    <!-- Cards, controlador de Menu ...  -->
+                    <a href="#" class="s-card">
+                        <img class="s-card__background" src="./assets/images/pic-sm-bg-01.jpg" alt="Cidade">
+                        <img class="s-card__image" src="./assets/images/spider-man-01.png" alt="Tobey Maguire">
+                        <h2 class="s-card__title">Tobey Maguire</h2>
+                    </a>
+                </article>
+                <article class="s-container__card">
+                    <!-- Cards, controlador de Menu ...  -->
+                    <a href="#" class="s-card">
+                        <img class="s-card__background" src="./assets/images/pic-sm-bg-02.jpg" alt="Cidade">
+                        <img class="s-card__image" src="./assets/images/spider-man-02.png" alt="Tom Holland">
+                        <h2 class="s-card__title">Tom Holland</h2>
+                    </a>
+                </article>
+                <article class="s-container__card">
+                    <!-- Cards, controlador de Menu ...  -->
+                    <a href="#" class="s-card">
+                        <img class="s-card__background" src="./assets/images/pic-sm-bg-03.jpg" alt="Cidade">
+                        <img class="s-card__image" src="./assets/images/spider-man-03.png" alt="Andrew Garfield">
+                        <h2 class="s-card__title">Andrew Garfield</h2>
+                    </a>
+                </article>
+            </section>
+            <!--controlador de Carrossel-->
+            <section class="s-controller">
+                <div class="s-controller__button">
+                    <span>01</span>
+                </div>
+                <div class="s-controller__button">
+                    <span>02</span>
+                </div>
+                <div class="s-controller__button">
+                    <span>03</span>
+                </div>
+                <div class="s-controller__line"></div>
+
+            </section>  
+        </div>
+    </main>
 
     
 </body>
