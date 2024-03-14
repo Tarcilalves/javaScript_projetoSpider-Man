@@ -23,6 +23,7 @@ body::before {
     opacity: .2; 
     z-index: -1;
     background-position: top;
+    transition: background-image 1s ease-in-out, opacity 1s ease-in-out;
 }
 
 .o-nav{
@@ -68,21 +69,24 @@ body::before {
 .s-card{
     width: 400px;
     height: 50vh;
+    transition: filter .5s ease-in-out;
 }
 
 .s-card__background{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    position: absolute;
-    opacity: 1;
+    position: absolute;    
+    transition: 1s ease-in-out;
+    
 }
 
 .s-card__image{
     width: 100%;
     height: 100%;
     object-fit: contain;
-    position: relative;
+    position: absolute;
+    transition: 1s ease-in-out;
 }
 
 .s-card__title{
@@ -92,6 +96,9 @@ body::before {
     position: absolute;
     width: 100%;
     bottom: 0;
+    transition: bottom 1s ease-in-out;
+    
+
 }
 /*controlador de Carrossel*/
 .s-controller{
@@ -130,4 +137,24 @@ body::before {
     width: 50%;
     height: 2px;
     position: absolute;
+}
+
+/*Hover Animation */
+.s-card--hovered .s-card__background{
+    cursor: pointer;
+    
+}
+
+.s-card--hovered .s-card__image{
+    transform: scale(1.4);
+    /*z-index: 1;  Garante que a imagem fique abaixo do título */
+    filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, .5));
+}
+
+body[id^="spider-man-"] .s-card:not(.s-card--hovered){
+    filter: grayscale(100%)
+}
+
+.s-card--hovered .s-card__title{
+    bottom: 40%;
 }
