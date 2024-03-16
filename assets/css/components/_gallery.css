@@ -1,0 +1,29 @@
+.gallery {
+    padding: 0;
+    padding-left: 0;
+  }
+  
+  .gallery ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  .gallery__caption{
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 1rem 0;
+  }
+  
+  .gallery ul li{
+    margin-left: 2rem;
+  }
+  
+  .gallery ul li:first-child{
+    margin-left: 0px;
+  }
+  
+  .gallery ul li a img{
+    border:solid 6px white;
+    border-radius: 15px;
+  }
