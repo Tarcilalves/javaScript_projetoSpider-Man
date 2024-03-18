@@ -28,7 +28,8 @@ body::before {
 
 .o-nav{
     grid-area: nav;
-    padding: 2rem 0;   
+    padding: 2rem 0 2rem .755rem; 
+    
 }
 .o-main{
     grid-area: main;    
@@ -52,24 +53,39 @@ body::before {
 /* Card */
 
 
-.s-conatainer__cards{
+.s-container__cards{
+    
     display: flex;
     justify-content: space-around;
+    width: calc(100vw / 3 * 8%);
+    perspective: 3000px;
+    transition: filter .5s ease-in-out;
+    transform-style: preserve-3d;
     
 }
 
-.s-container__card{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+.s-card{
+    position: absolute;
+    width: calc(100vw / 3 * 8%);
+    width: 400px;
+    height: 45vh;   
     border: .5rem solid #fff;
+   
+    
 }
 
-.s-card{
-    width: 400px;
-    height: 50vh;
+/*.s-card{    
     transition: filter .5s ease-in-out;
+}*/
+
+.s-container__card:nth-child(1){
+    transform: rotateY(0deg) translateZ(50vw);
+}
+.s-container__card:nth-child(2){
+    transform: rotateY(120deg) translateZ(50vw);
+}
+.s-container__card:nth-child(3){
+    transform: rotateY(240deg) translateZ(50vw);
 }
 
 .s-card__background{
@@ -102,11 +118,13 @@ body::before {
 }
 /*controlador de Carrossel*/
 .s-controller{
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 3rem;
+    bottom: 1.5rem;
+    width: 100%;
 }
 .s-controller__button{
     display: flex;
@@ -130,6 +148,11 @@ body::before {
 /* pegar um elemento usando pseudo-classe */
 .s-controller__button:nth-child(2){
     margin: 0 2rem;
+}
+
+.s-controller__button--active{    
+    
+    outline: .50rem solid #ffffff2a ;
 }
 
 .s-controller__line{

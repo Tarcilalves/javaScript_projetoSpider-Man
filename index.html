@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/home-page-style.css">
-    <script src="./assets/scripts/card-hover-animation.js"></script>
+    <script src="./assets/scripts/script.js"></script>
 
     <title>Spider Man | Multiverso</title>
 </head>
@@ -31,26 +31,26 @@
     </nav>
     <main>
         <div class="o-main">
-            <section class="s-conatainer__cards">
-                <article class="s-container__card">
+            <section class="s-container__cards" style="transform: translateZ(-40vw) rotateY(0deg);" >
+                <article class="s-card ">
                     <!-- Cards, controlador de Menu ...  -->
-                    <a href="#" class="s-card" id="spider-man-01">
+                    <a href="#" id="spider-man-01">
                         <img class="s-card__background" src="./assets/images/pic-sm-bg-01.jpg" alt="Cidade">
                         <img class="s-card__image" src="./assets/images/spider-man-01.png" alt="Tobey Maguire">
                         <h2 class="s-card__title">Tobey Maguire</h2>
                     </a>
                 </article>
-                <article class="s-container__card">
+                <article class="s-card">
                     <!-- Cards, controlador de Menu ...  -->
-                    <a href="#" class="s-card" id="spider-man-02">
+                    <a href="#" id="spider-man-02">
                         <img class="s-card__background" src="./assets/images/pic-sm-bg-02.jpg" alt="Cidade">
                         <img class="s-card__image" src="./assets/images/spider-man-02.png" alt="Tom Holland">
                         <h2 class="s-card__title">Tom Holland</h2>
                     </a>
                 </article>
-                <article class="s-container__card" id="spider-man-03">
+                <article class="s-card" id="spider-man-03">
                     <!-- Cards, controlador de Menu ...  -->
-                    <a href="#" class="s-card">
+                    <a href="#">
                         <img class="s-card__background" src="./assets/images/pic-sm-bg-03.jpg" alt="Cidade">
                         <img class="s-card__image" src="./assets/images/spider-man-03.png" alt="Andrew Garfield">
                         <h2 class="s-card__title">Andrew Garfield</h2>
@@ -59,7 +59,7 @@
             </section>
             <!--controlador de Carrossel-->
             <section class="s-controller">
-                <div class="s-controller__button">
+                <div class="s-controller__button s-controller__button--active">
                     <span>01</span>
                 </div>
                 <div class="s-controller__button">
